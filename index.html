@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="top">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Play vs Friend or vs Computer (unbeatable)</p>
+      </header>
+
+      <section class="controls">
+        <div class="modes">
+          <label
+            ><input type="radio" name="mode" value="pvp" checked /> 2
+            Players</label
+          >
+          <label
+            ><input type="radio" name="mode" value="pvc" /> vs Computer</label
+          >
+        </div>
+        <div class="options">
+          <button id="newBtn" class="btn">New Game</button>
+          <select id="firstSelect" title="Choose who starts">
+            <option value="X">X starts</option>
+            <option value="O">O starts</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="board-wrap">
+        <div id="status" class="status">Turn: <span id="turn">X</span></div>
+        <div
+          id="board"
+          class="board"
+          role="grid"
+          aria-label="Tic Tac Toe board"
+        >
+          <!-- 9 cells inserted by markup for accessibility -->
+          <button class="cell" data-index="0" aria-label="cell 1"></button>
+          <button class="cell" data-index="1" aria-label="cell 2"></button>
+          <button class="cell" data-index="2" aria-label="cell 3"></button>
+
+          <button class="cell" data-index="3" aria-label="cell 4"></button>
+          <button class="cell" data-index="4" aria-label="cell 5"></button>
+          <button class="cell" data-index="5" aria-label="cell 6"></button>
+
+          <button class="cell" data-index="6" aria-label="cell 7"></button>
+          <button class="cell" data-index="7" aria-label="cell 8"></button>
+          <button class="cell" data-index="8" aria-label="cell 9"></button>
+        </div>
+      </section>
+
+      <section class="scoreboard">
+        <div class="score">X: <span id="scoreX">0</span></div>
+        <div class="score">O: <span id="scoreO">0</span></div>
+        <div class="score">Ties: <span id="scoreTie">0</span></div>
+      </section>
+
+      <footer class="footer small">
+        Tip: Pick mode, then click cells. Computer plays 'O' when in vs computer
+        mode.
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
