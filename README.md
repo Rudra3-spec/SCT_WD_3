@@ -7,7 +7,7 @@ You can play against a friend (2 players) or challenge the computer (unbeatable 
 
 ## 📸 Screenshot
 
-![Tic-Tac-Toe Screenshot](./41fc7297-fbe0-451c-925c-3b2738fa3489.png)
+![Tic-Tac-Toe Screenshot](./screenshot.png)
 
 ---
 
